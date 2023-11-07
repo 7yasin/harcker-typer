@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Hacker Typer</title>
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta charset="utf-8">
+<script src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/additional-methods.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/additional-methods.min.js"></script>
+<script src="script.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"/>
+
+
+</head>
+
+<body>
+
+<div id="consoleArea" class="consoleArea" style="border: 3px solid red;">
+
+<p id="consoleHeader">CONSOLE</p>
+<hr>
+
+<p id="logArea" class="logArea" style="color: white; overflow-wrap: break-word;"></p>
+</div>
+<div class="codeArea" id="codeArea"><p id="codeText" class="codeText" style="color: rgb(0,255, 0);"><span id="cursor" class="cursor">|</span></p></div>
+<div id="bottom"></div>
+<div id="infoArea" class="infoArea">
+ <p id="caps"></p>   
+</div>
+
+<div class="settings" id="settings"  style="border: 3px solid red;">
+
+<div class="autoCodeArea" id="autoCodeArea">
+<h3>Auto Code</h3>
+<button id="autoCodeBtn" onclick="autoCodeWr()">Enable</button>
+</div>
+
+<div style="display: none;" id="speedArea" class="speedArea">
+    <h3>Auto Code Speed</h3>
+    <input type="radio" name="Fast" id="fast" onclick="changeSpeed('Fast')" checked><span style="color: white;">Fast</span>
+    <input type="radio" name="Fast" id="fast" onclick="changeSpeed('Faster')"><span style="color: yellow;">Faster</span>
+    <input type="radio" name="Fast" id="fast"onclick="changeSpeed('Super Faster')"><span style="color:crimson">Super Faster</span>
+    
+
+</div>
+
+
+<div>
+    <h3>Type My Name</h3>
+<input type="text" id="typeMyNameİnput" placeholder="Your Name" onchange="changeName(this.value)">
+</div>
+
+<div>
+    <h3>Text Color</h3>
+    <input type="color" id="colorChangeBtn" name="head" value="#00FF00" class="colors" onchange="changeColor(this.value)">
+
+
+
+</div>
+
+<p id="settingsWarning" style="color: red; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; text-align: bottom;">Warning: settings are active when the tab is closed</p>
+</div>
+
+<button id="settingsBtn" class="settingsBtn" onclick="settingsDisplay()"><i class="fas fa-cog"></i></button>
+
+
+<p class="footer">prepared by <a style="text-decoration: none;" href="https://www.github.com/7yasin">7yasin</a> and shared publicly on GitHub.</p>
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+</html>
