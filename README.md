@@ -20,4 +20,4 @@ It gives the appearance that you are a hacker by translating randomly pressed ke
 
 ## Project Info
 <h5>Project Date: 2022</h5>
-<h5>Lisance: MIT</h5>
+<h5>License: MIT</h5>
